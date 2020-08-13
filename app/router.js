@@ -7,5 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.mount('ember-engine-ahlev-job', { path: 'engines'});
+  this.mount('ember-engine-ahlev-job', { path: 'ahlev-job'});
+  this.mount('ember-engine-ahlev-movie', { path: 'ahlev-movie'});
+  this.mount('ember-engine-ahlev-about', { path: 'ahlev-about'});
 });

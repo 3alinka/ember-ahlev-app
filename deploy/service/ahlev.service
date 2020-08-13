@@ -1,0 +1,11 @@
+
+[Unit]
+Description=ahlev.com
+
+[Service]
+Type=simple
+ExecStart=/var/www/ahlev/deploy/script/start.sh
+ExecStop=/var/www/ahlev/deploy/script/stop.sh
+
+[Install]
+WantedBy=multi-user.target
