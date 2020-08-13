@@ -1,6 +1,22 @@
-# ember-ahlev-app
+# AHLEV.COM
 
-This is the main app. 
+This is the main app.
+
+## Architecture Overview
+
+ahlev.com is composed of many independent and dependent modules. Each of them is housed inside an isolated repository. They will be downloaded and installed as the npm packages, which are the dependencies of the main app.
+
+<img src="./doc/architecture.svg">
+
+## why?
+1- Each module is installable and uninstallable.<br/>
+2- Each module is resuable.<br/>
+3- Each team can be set up to see only their own code.<br/>
+
+## what if some modules need to communicate with other?
+
+May be use [Addon](https://cli.emberjs.com/release/writing-addons/intro-tutorial/), and make it the only common dependency of other engines? Not really sure it will work yet. I am going to find out.
+
 
 ## Prerequisites
 
