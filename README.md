@@ -21,7 +21,7 @@ and this take cares of everything about site information.
 * Each team can be set up to see only their own code.
 
 ## what if some modules need to communicate with other?
-Event Bus should be the answer. 
+A singleton event bus should be the answer.
 May be we can use event bus inside an [Addon](https://cli.emberjs.com/release/writing-addons/intro-tutorial/), and make it the common dependency of every relative modules. Since it is the common dependency, so it should be able to pass some messages backwards and forwards. Not sure it will work or not, but going to try this way.
 
 ## Features
