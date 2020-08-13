@@ -8,15 +8,24 @@ ahlev.com is composed of many independent and dependent modules. Each of them is
 
 <img src="./doc/architecture.svg">
 
+* [job module](https://github.com/ohahlev/ember-engine-ahlev-job)
+this takes care of every thing about job.
+* [movie module](https://github.com/ohahlev/ember-engine-ahlev-movie)
+this takes care of everything about movie.
+* [about module](https://github.com/ohahlev/ember-engine-ahlev-about)
+and this take cares of everything about site information.
+
 ## why?
-1- Each module is installable and uninstallable.<br/>
-2- Each module is resuable.<br/>
-3- Each team can be set up to see only their own code.<br/>
+* Each module is installable and uninstallable.
+* Each module is resuable.
+* Each team can be set up to see only their own code.
 
 ## what if some modules need to communicate with other?
+Event Bus should be the answer. 
+May be we can use event bus inside an [Addon](https://cli.emberjs.com/release/writing-addons/intro-tutorial/), and make it the common dependency of every relative modules. Since it is the common dependency, so it should be able to pass some messages backwards and forwards. Not sure it will work or not, but going to try this way.
 
-May be use [Addon](https://cli.emberjs.com/release/writing-addons/intro-tutorial/), and make it the only common dependency of other engines? Not really sure it will work yet. I am going to find out.
-
+## Features
+* [tailwindcss](https://tailwindcss.com/) applied
 
 ## Prerequisites
 
