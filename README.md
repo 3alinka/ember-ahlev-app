@@ -1,6 +1,6 @@
 # ember-ahlev-app
 
-This is the main app.
+This is the main app. 
 
 ## Prerequisites
 
