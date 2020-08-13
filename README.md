@@ -1,10 +1,10 @@
 # AHLEV.COM
 
-This is the main app.
+This is my website. This architecture is being used at [ahlev.com](https://ahlev.com).
 
 ## Architecture Overview
 
-ahlev.com is composed of many independent and dependent modules. Each of them is housed inside an isolated repository. They will be downloaded and installed as the npm packages, which are the dependencies of the main app.
+it is composed of many independent and dependent modules. Each of them is housed inside an isolated repository. They will be downloaded and installed as the npm packages, which are the dependencies of the main app.
 
 <img src="./doc/architecture.svg">
 
