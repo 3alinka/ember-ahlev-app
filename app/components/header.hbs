@@ -19,8 +19,14 @@
       </div>
     </div>
     <nav class={{if this.isOpen "block" "hidden"}} class="hidden px-2 pt-2 pb-4 sm:block sm:flex sm:p-0">
+      <span {{on "click" this.toggle}}>
       {{link-to "Jobs" "ember-engine-ahlev-job.jobs" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800" }}
+      </span>
+      <span {{on "click" this.toggle}}>
       {{link-to "Movies" "ember-engine-ahlev-movie.movies" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" }}
+      </span>
+      <span {{on "click" this.toggle}}>
       {{link-to "About" "ember-engine-ahlev-about.about" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" }}
+      </span>
     </nav>
   </header>

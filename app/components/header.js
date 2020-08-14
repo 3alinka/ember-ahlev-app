@@ -7,6 +7,7 @@ export default class HeaderComponent extends Component {
 
   @action
   toggle() {
+    console.debug("here is called");
     this.isOpen = !this.isOpen;
   }
 }
