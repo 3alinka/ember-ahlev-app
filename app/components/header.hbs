@@ -6,10 +6,8 @@
         </a>
       </div>
       <div class="sm:hidden">
-
         <!-- @TODO -->
         <button type="button" {{on "click" this.toggle}} class="block text-gray-500 hover:text-white focus:text-white focus:outline-none">
-
           <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
               {{#if this.isOpen}}
             <path fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
@@ -20,7 +18,7 @@
         </button>
       </div>
     </div>
-    <nav class={{if this.isOpen "block" "hidden"}} class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+    <nav class={{if this.isOpen "block" "hidden"}} class="hidden px-2 pt-2 pb-4 sm:block sm:flex sm:p-0">
       {{link-to "Jobs" "ember-engine-ahlev-job.jobs" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800" }}
       {{link-to "Movies" "ember-engine-ahlev-movie.movies" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" }}
       {{link-to "About" "ember-engine-ahlev-about.about" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" }}
