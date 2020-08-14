@@ -9,5 +9,6 @@ export default class HeaderComponent extends Component {
   toggle() {
     console.debug("here is called");
     this.isOpen = !this.isOpen;
+
   }
 }

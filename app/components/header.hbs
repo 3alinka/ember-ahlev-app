@@ -19,8 +19,14 @@
       </div>
     </div>
     <nav class={{if this.isOpen "block" "hidden"}} class="hidden px-2 pt-2 pb-4 sm:block sm:flex sm:p-0">
-      {{link-to "Jobs" "ember-engine-ahlev-job.jobs" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800" invokeAction=(action "toggle") }}
-      {{link-to "Movies" "ember-engine-ahlev-movie.movies" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" invokeAction=(action "toggle") }}
-      {{link-to "About" "ember-engine-ahlev-about.about" class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" invokeAction=(action "toggle") }}
+      {{#if this.isOpen}}
+        {{link-to "Jobs" "ember-engine-ahlev-job.jobs" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800" invokeAction=(action "toggle") }}
+        {{link-to "Movies" "ember-engine-ahlev-movie.movies" class="block mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" invokeAction=(action "toggle") }}
+        {{link-to "About" "ember-engine-ahlev-about.about" class="block mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" invokeAction=(action "toggle") }}
+      {{else}}
+        {{link-to "Jobs" "ember-engine-ahlev-job.jobs" class="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800"}}
+        {{link-to "Movies" "ember-engine-ahlev-movie.movies" class="block mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" }}
+        {{link-to "About" "ember-engine-ahlev-about.about" class="block mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2" }}
+      {{/if}}
     </nav>
   </header>
