@@ -37,6 +37,7 @@
     "ember-cli-uglify": "^3.0.0",
     "ember-data": "~3.20.0",
     "ember-engine-ahlev-about": "git+https://github.com/ohahlev/ember-engine-ahlev-about.git",
+    "ember-engine-ahlev-hero": "git+https://github.com/ohahlev/ember-engine-ahlev-hero.git",
     "ember-engine-ahlev-job": "git+https://github.com/ohahlev/ember-engine-ahlev-job.git",
     "ember-engine-ahlev-movie": "git+https://github.com/ohahlev/ember-engine-ahlev-movie.git",
     "ember-engines": "^0.8.5",
