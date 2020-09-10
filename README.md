@@ -8,12 +8,12 @@ it is composed of many independent and dependent modules. Each of them is housed
 
 <img src="./doc/architecture.svg">
 
-* [about module](https://github.com/ohahlev/ember-engine-ahlev-about)
+* [about module](https://github.com/3alinka/ember-engine-ahlev-about)
 and this take cares of everything about site information.
 * blog module: this takes care of every thing about posts.
-* [job module](https://github.com/ohahlev/ember-engine-ahlev-job)
+* [job module](https://github.com/3alinka/ember-engine-ahlev-job)
 this takes care of every thing about job.
-* [movie module](https://github.com/ohahlev/ember-engine-ahlev-movie)
+* [movie module](https://github.com/3alinka/ember-engine-ahlev-movie)
 this takes care of everything about movie.
 
 ## why?
